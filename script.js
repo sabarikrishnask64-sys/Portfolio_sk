@@ -1,46 +1,50 @@
 const resumeData = {
-  name: 'Your Name',
-  title: 'Frontend Developer & Problem Solver',
+  name: 'Sabarikrishna S',
+  title: 'Electronics & Communication Diploma Student',
   summary:
-    'I build modern, responsive, and user-friendly web experiences with a strong focus on clean code, accessibility, and thoughtful design.',
+    'I am a responsible and passionate learner focused on electronics, communication systems, and practical technical problem solving.',
   about:
-    'I am a dedicated developer with experience crafting polished digital products for startups and clients. My work combines technical precision with a strong eye for user experience, turning ideas into engaging and reliable web interfaces.',
-  facts: ['Based in Your City', 'Open to remote opportunities', 'Passionate about UI/UX and performance'],
+    'Responsible and passionate about delivering outstanding quality and service. Creative and always up for new challenges, I enjoy working with teammates and building good professional relationships while learning new technical skills.',
+  facts: [
+    'Based in Karimugal, Ernakulam',
+    'Diploma in Electronics & Communication (2023–2025)',
+    'Strong interest in PCB designing, soldering, and Arduino programming'
+  ],
   experience: [
     {
-      role: 'Frontend Developer',
-      company: 'Example Studio',
-      period: '2022 — Present',
-      details: 'Led the redesign of client-facing web experiences and improved page performance by 35%.'
+      role: 'Internship',
+      company: 'BSNL',
+      period: '15/05/2023 – 03/06/2023',
+      details: 'Completed a three-week internship focused on practical exposure in communication and technical operations.'
     },
     {
-      role: 'Web Developer Intern',
-      company: 'Bright Labs',
-      period: '2021 — 2022',
-      details: 'Built landing pages and internal dashboards while collaborating with designers and product teams.'
+      role: 'Internship',
+      company: 'IHRD Finishing School',
+      period: '01/04/2024 – 26/04/2024',
+      details: 'Completed a three-week internship gaining exposure to hands-on technical learning and workplace discipline.'
     }
   ],
   projects: [
     {
-      title: 'Portfolio Platform',
-      description: 'A sleek, responsive portfolio site with custom animations and a content-first layout.',
-      tags: ['HTML', 'CSS', 'JavaScript']
+      title: 'Electronics Learning',
+      description: 'Developing practical skills in electronics fundamentals, communication systems, and troubleshooting.',
+      tags: ['Electronics', 'Communication', 'Problem Solving']
     },
     {
-      title: 'E-commerce UI',
-      description: 'A conversion-focused storefront experience with accessible components and smooth interactions.',
-      tags: ['React', 'UI Design', 'Accessibility']
+      title: 'PCB Designing',
+      description: 'Exploring circuit layout design and practical implementation of hardware solutions.',
+      tags: ['PCB', 'Hardware', 'Design']
     },
     {
-      title: 'Analytics Dashboard',
-      description: 'A data-rich dashboard designed to surface metrics clearly for non-technical users.',
-      tags: ['Charting', 'JavaScript', 'UX']
+      title: 'Arduino Programming',
+      description: 'Building confidence in embedded programming and hands-on electronics projects.',
+      tags: ['Arduino', 'Programming', 'Embedded']
     }
   ],
-  skills: ['HTML5', 'CSS3', 'JavaScript', 'React', 'Git', 'Figma', 'Responsive Design', 'Accessibility'],
+  skills: ['C Programming', 'Python Basics', 'PCB Designing', 'Soldering', 'Arduino Programming', 'Communication Skills', 'Teamwork', 'Technical Learning'],
   contact: {
-    text: 'I am currently open to freelance work, collaborations, and full-time opportunities. Let’s connect and create something meaningful.',
-    email: 'your@email.com'
+    text: 'I am open to learning opportunities, internships, and collaborations in electronics and communication. Feel free to connect with me.',
+    email: 'sabarikrishnask64@gmail.com'
   }
 };
 
@@ -95,6 +99,7 @@ skillsList.innerHTML = resumeData.skills.map((skill) => `<span>${skill}</span>`)
 contactText.textContent = resumeData.contact.text;
 contactEmail.href = `mailto:${resumeData.contact.email}`;
 contactEmail.textContent = `Email ${resumeData.contact.email}`;
+contactEmail.href = `mailto:${resumeData.contact.email}`;
 year.textContent = new Date().getFullYear();
 
 menuToggle?.addEventListener('click', () => {
