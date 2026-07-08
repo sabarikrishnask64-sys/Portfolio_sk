@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Personal Portfolio</title>
+    <meta name="description" content="A modern personal portfolio website built with HTML, CSS, and JavaScript." />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="hero">
+      <nav class="nav container">
+        <a class="logo" href="#home">SK</a>
+        <button class="menu-toggle" aria-label="Toggle navigation" aria-expanded="false">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+        <ul class="nav-links">
+          <li><a href="#about">About</a></li>
+          <li><a href="#experience">Experience</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+
+      <section id="home" class="hero-content container">
+        <div class="hero-copy">
+          <p class="eyebrow">Hello, I’m</p>
+          <h1 id="hero-name">Your Name</h1>
+          <h2 id="hero-title">Frontend Developer & Problem Solver</h2>
+          <p id="hero-summary">
+            I build modern, responsive, and user-friendly web experiences with a strong focus on clean code and thoughtful design.
+          </p>
+          <div class="hero-actions">
+            <a class="btn btn-primary" href="#projects">View Projects</a>
+            <a class="btn btn-secondary" href="#contact">Let’s Talk</a>
+          </div>
+          <div class="hero-highlights">
+            <span>Responsive Design</span>
+            <span>Performance Focused</span>
+            <span>Accessibility First</span>
+          </div>
+        </div>
+      </section>
+    </header>
+
+    <main>
+      <section id="about" class="section container">
+        <div class="section-heading">
+          <p class="eyebrow">About Me</p>
+          <h2>Creating impactful digital experiences</h2>
+        </div>
+        <div class="about-grid">
+          <div>
+            <p id="about-text"></p>
+          </div>
+          <div class="about-card">
+            <h3>Quick Facts</h3>
+            <ul id="facts-list"></ul>
+          </div>
+        </div>
+      </section>
+
+      <section id="experience" class="section section-alt">
+        <div class="container">
+          <div class="section-heading">
+            <p class="eyebrow">Experience</p>
+            <h2>Where I’ve worked</h2>
+          </div>
+          <div id="experience-list" class="timeline"></div>
+        </div>
+      </section>
+
+      <section id="projects" class="section container">
+        <div class="section-heading">
+          <p class="eyebrow">Projects</p>
+          <h2>Selected work</h2>
+        </div>
+        <div id="projects-grid" class="card-grid"></div>
+      </section>
+
+      <section id="skills" class="section section-alt">
+        <div class="container">
+          <div class="section-heading">
+            <p class="eyebrow">Skills</p>
+            <h2>Tools and technologies</h2>
+          </div>
+          <div id="skills-list" class="skill-list"></div>
+        </div>
+      </section>
+
+      <section id="contact" class="section container">
+        <div class="section-heading">
+          <p class="eyebrow">Contact</p>
+          <h2>Let’s build something great together</h2>
+        </div>
+        <div class="contact-card">
+          <p id="contact-text"></p>
+          <a id="contact-email" class="btn btn-primary" href="mailto:your@email.com">Send Email</a>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="container footer-content">
+        <p>© <span id="year"></span> Your Name. All rights reserved.</p>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
